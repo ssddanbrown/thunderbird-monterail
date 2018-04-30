@@ -33,7 +33,7 @@
 :root {
   /*---- General Options ----*/
   --light-color: #EFF0F1;
-  --light-text-color: #31363B;
+  --light-text-color: #444444;
   --light-white-background: white;
   --light-light-background: var(--light-color);
   --light-light-text-color: var(--light-text-color);
@@ -43,7 +43,7 @@
   
   --menu-text-color: var(--light-text-color);
   /*** These highlight colors are used if more specific ones aren't specified below ***/
-  --highlight-color: #3DAEE9;
+  --highlight-color: #d0e6f2;
   --highlight-text-color: var(--light-light-text-color);
   
   /*---- Tree Views (Folder Tree/Message List) General Options ----*/
@@ -52,8 +52,8 @@
   
   /*---- Folder Tree ----*/
   --folder-tree-background-color: var(--light-color) !important;
-  --folder-tree-text-color: var(--light-text-color);
-  --folder-tree-row-height: 25px;
+  --folder-tree-text-color: #555555;
+  --folder-tree-row-height: 36px;
   --folder-tree-highlight-background-color: var(--highlight-color);
   --folder-tree-highlight-text-color: var(--folder-tree-text-color);
   
@@ -62,7 +62,7 @@
   --message-list-header-text-color: var(--light-light-text-color);
   --message-list-background-color: var(--light-white-background);
   --message-list-text-color: var(--light-light-text-color);
-  --message-list-row-height: 40px;
+  --message-list-row-height: 48px;
   --message-list-highlight-background-color: var(--tree-row-highlight-background-color);
   --message-list-highlight-text-color: var(--tree-row-highlight-text-color);
   
@@ -92,7 +92,8 @@
 }
 
 .tabmail-tab[selected="true"] .tab-content {
-	background: var(--light-light-background) !important;
+  background: var(--light-light-background) !important;
+  border-top: 2px solid #57a6d1 !important;
 }
 
 .tabmail-tab[selected="true"] .tab-content * {
@@ -135,3 +136,6 @@ menuseparator {
 	border-bottom: 1px solid rgba(127,127,127,0.2) !important;
 }
 
+.toolbarbutton-1.msgHeaderView-button {
+  background: transparent !important;
+}
